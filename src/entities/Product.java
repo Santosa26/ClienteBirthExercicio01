@@ -25,5 +25,10 @@ public class Product {
         this.price = price;
     }
 
+    public String toString(){
+        return name + 
+                ", $" +
+                price;
+    }
     
 }

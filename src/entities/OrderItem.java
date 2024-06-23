@@ -38,4 +38,14 @@ public class OrderItem {
     public Double sutTotal(){
         return quantity * price;
     }
+
+    public String toString(){
+        return product +
+                ", $" + 
+                price +
+                ", Quantity: " +
+                quantity +
+                ", Subtotal: $" +
+                sutTotal();
+    }
 }
