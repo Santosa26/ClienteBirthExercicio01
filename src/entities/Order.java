@@ -50,7 +50,19 @@ public class Order {
         this.items = items;
     }
 
-    
+    public void addItem(OrderItem item){
+        items.add(item);
+    }
 
+    public void removeItem(OrderItem item){
+        items.remove(item);
+    }
+
+    public Double total(){
+        double sum = 0.0;
+        for(OrderItem o: items){
+            sum += o.sutTotal();
+        } return sum;
+    }
 
 }
